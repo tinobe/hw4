@@ -11,4 +11,4 @@ script:
   - make
 
 after_success:
-  - valgrind --tool=memcheck ./statistics 
+  - valgrind --tool=memcheck ./filter 
