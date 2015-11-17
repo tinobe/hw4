@@ -25,10 +25,11 @@ Structure your program well, in particular:
   The current file has 237 lines, allocate sufficient memory *inside*
   your reading function. This requires dynamic allocation.
 * Have one function which filters the data. Interpret the
-  data as periodic function, i.e. f[N]=f[0]. Note that once
-  your code works, you can apply the filter function more than
-  once to the data. It is interesting to see what happens to the
-  data when you apply the filter several times.
+  data as periodic function, i.e. f[N]=f[0]. Just like in previous
+  programs, overwrite the original array and do not create a second
+  array.  Note that once your code works, you can apply the filter
+  function more than once to the data. It is interesting to see what
+  happens to the data when you apply the filter several times.
 * Write the final result inside an extra function into a file, do not
   overwrite the original data file.
 * Make sure that all memory that has been allocated via `new` has
