@@ -8,7 +8,7 @@ This homework is divided into two parts. Part 1 is a very easy problem and you d
 This problem is meant as a check for yourself. Solving it requires basic concepts we discussed in the lecture and used in the exercises so far. At this point you should have no major problems in solving it. Your level of C++ syntax skills should be sufficient to handle this problem without having to look up many things in older files or in the slides. This reflects the minimum C++ knowledge we expect you to have at this point.
 
 *Problem 1*:
-Generate a static array of *N* random numbers. Fill in the numers within an extra function of your code, similar to the last homework. Write a second function which finds the maximum and the minimum number stored in that array. Print the two values from inside the `main()` function.
+Generate a static array of *N* random numbers. Fill in the numbers within an extra function of your code, similar to the last homework. Write a second function which finds the maximum and the minimum number stored in that array. Print the two values from inside the `main()` function.
 
 ***
 
@@ -22,9 +22,8 @@ In the file **noisy.dat** there is such a signal. You can plot it in gnuplot to 
 
 Structure your program well, in particular:
 * Write a function which reads the data into an array.
-    Remember, you do not know the length of the file the priori,
-    i.e. you will have to find out and afterwards allocate sufficient
-    memory.
+  The current file has 237 lines, allocate sufficient memory *inside*
+  your reading function. This requires dynamic allocation.
 * Have one function which filters the data. Interpret the
   data as periodic function, i.e. f[N]=f[0]. Note that once
   your code works, you can apply the filter function more than
